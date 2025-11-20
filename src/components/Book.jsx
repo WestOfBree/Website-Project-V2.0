@@ -13,20 +13,19 @@ const Book = ({ book }) => {
               </figure>
             <a href=""> <h3 className="book__title"> {book.title}</h3></a>
              <div className="book__ratings">
-              <FontAwesomeIcon icon="star" />
-              <FontAwesomeIcon icon="star" />
-              <FontAwesomeIcon icon="star" />
-              <FontAwesomeIcon icon="star" />
-              <FontAwesomeIcon icon="star" />
+            {/* {new Array(4).fill(0).map(() => <FontAwesomeIcon icon="star" />)} */}
+              {Array.from({ length: Math.floor(book.rating) }, (_, index) => (
+                <FontAwesomeIcon icon="star" key={index} className="book__star--icon" />
+              ))}
+              {book.rating % 1 !== 0 && (
+                <FontAwesomeIcon icon="star-half" className="book__star--icon" />
+              )}
              </div>
              <div className="book__price">
-              <span className="book__price--normal">$24.99</span>
-              $19.99
+              {book.salePrice ? (<><span className="book__price--normal">${book.originalPrice.toFixed(2)}</span>
+              ${book.salePrice.toFixed(2)}</>) : (<>${book.originalPrice.toFixed(2)}</>)
+            }
              </div>
-              <p className="book__summary--description">
-                A novel by J.R.R. Tolkien that explores the history of Middle-earth,
-                including the creation of the world and the events leading up to The Lord of the Rings.
-              </p>
             </div>
   );
 };

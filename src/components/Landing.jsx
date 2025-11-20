@@ -1,5 +1,5 @@
 import React from "react";
-import UndrawBooks from "../assets/undraw_reading.svg";
+import UndrawBooks from "../assets/undraw_reading-brown.svg";
 
 const Landing = () => {
   return (
@@ -9,11 +9,11 @@ const Landing = () => {
         <div className="header__description">
         <h1>Welcome to Bilbo's Library</h1>
         <h2>
-          Your gateway to a world of <span className="colored-text">books</span>{" "}
+          Your gateway to a world of <span className="yellow-text">books</span>{" "}
           and
-          <span className="colored-text"> knowledge</span>.
+          <span className="yellow-text"> knowledge</span>.
         </h2>
-        <a href="#features">
+        <a href="#featured">
           <button className="btn">Browse Books</button>
         </a>
       </div>

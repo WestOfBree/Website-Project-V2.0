@@ -1,34 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../assets/Library.svg"
+import Logo from "../assets/Library.svg";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">
-        <div className="row row__column">
-          <Link to="/">
-            <figure className="footer__logo">
-              <img src={Logo} className="footer__logo--img" alt="" />
-            </figure>
-          </Link>
-          <div className="footer__list">
-            <Link to="/" className="footer__link">
-              Home
-            </Link>
-            <span className="footer__link no-cursor">About</span>
-            <Link to="/books" className="footer__link">
-              Books
-            </Link>
-            <Link to="/cart" className="footer__link">
-              Cart
-            </Link>
+   <footer>
+    <div className="container">
+      <div className="row row__column">
+        <a href="/">
+        <figure className="footer__logo">
+            <img src={Logo} alt="Bookstore Logo" className="footer__logo--img" />
+          </figure>
+          </a>
+          <div className="footer__link--list">
+            <a href="/" className="footer__link">Home</a>
+            <span className="footer__link no-cursor" onClick={() => alert("this button has no functionality")}>About</span>
+            <a href="/features" className="footer__link">Books</a>
+            <a href="/highlights" className="footer__link">Cart</a>
           </div>
-          <div className="footer__copyright">Copyright &copy; 2021 Library</div>
-        </div>
+          <div className="footer__copyright">
+            &copy; 2024 Bookstore. All rights reserved.
+          </div>
+
       </div>
-    </footer>
+    </div>
+   </footer>
   );
-};
+}
 
 export default Footer;

@@ -2,13 +2,13 @@ import React from "react";
 import Book from "./Book";
 import { books } from "../data";
 
-const Features = () => {
+const Discounted = () => {
   return (
     <section id="recent">
       <div className="container">
         <div className="row">
           <h2 className="section__title">
-            Discounted <span className="purple">Books</span>
+            Discounted <span className="colored-text">Books</span>
           </h2>
           <div className="books">
             {books
@@ -25,4 +25,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Discounted;  

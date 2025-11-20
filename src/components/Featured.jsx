@@ -15,10 +15,8 @@ const Featured = () => {
               .filter((book) => book.rating === 5)
               .slice(0, 4)
               .map((book) => (
-                <Book book={ book } />
+                <Book book={ book } key={book.id} />
               ))}
-
-            <Book />
           </div>
         </div>
       </div>
