@@ -11,7 +11,7 @@ const Price = ({ salePrice, originalPrice }) => {
           ${salePrice.toFixed(2)}
         </>
       ) : (
-        `$${originalPrice.toFixed(2)}`
+        <>${originalPrice.toFixed(2)}</>
       )}
     </div>
   );
