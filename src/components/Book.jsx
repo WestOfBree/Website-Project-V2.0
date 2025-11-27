@@ -6,7 +6,7 @@ import Ratings from "./ui/Ratings";
 const Book = ({ book }) => {
   return (
     <div className="book">
-      <Link to={`/books/1`}>
+      <Link to={`/books/${book.id}`} className="book__link">
         <figure className="book__img--wrapper">
           <img
             src={book.url}
@@ -15,7 +15,7 @@ const Book = ({ book }) => {
           />
         </figure>
       </Link>
-      <Link to={`/books/1`}>
+      <Link to={`/books/${book.id}`} className="book__link">
         <h3 className="book__title"> {book.title}</h3>
       </Link>
       <div className="book__ratings">

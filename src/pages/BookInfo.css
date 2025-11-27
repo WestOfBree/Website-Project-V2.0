@@ -1,0 +1,10 @@
+.book__selected--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}   
+.book__selected--title--top {
+  font-size: 2rem;
+  font-weight: 700;
+}
