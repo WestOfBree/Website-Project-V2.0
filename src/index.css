@@ -36,6 +36,7 @@ img {
 
 p {
   line-height: 1.5;
+  font-size: 16px;
 }
 
 a {
@@ -694,7 +695,7 @@ select {
   font-size: 18px;
 }
 
-.cart__input {
+.cart__quantity--input {
   padding: 8px;
   width: 60px;
 }
@@ -730,7 +731,7 @@ select {
   width: 48px;
 }
 
-.total {
+.cart__summary {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -741,7 +742,7 @@ select {
   font-size: 16px;
 }
 
-.total__item {
+.cart__summary--item {
   font-size: 18px;
   margin-bottom: 24px;
   width: 100%;
@@ -749,12 +750,12 @@ select {
   justify-content: space-between;
 }
 
-.total__sub-total {
+.cart__summary--sub-total {
   border-top: 2px solid #2E6F405d;
   padding-top: 24px;
 }
 
-.total__price {
+.cart__summary--total {
   font-weight: bold;
 }
 

@@ -38,10 +38,10 @@ const Nav = () => {
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">
-            <a href="/" className="nav__link">
+            <Link to="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
               <span className="cart__length">3</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="menu__backdrop">
