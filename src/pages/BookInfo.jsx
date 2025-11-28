@@ -12,7 +12,7 @@ function BookInfo({ books, addToCart, cart }) {
   function addBookToCart(book) {
     addToCart(book);
   }
-  function isItemInCart(cart) {
+  function isItemInCart() {
     return cart.find((book) => +book.id === +id);
   }
   return (
@@ -27,7 +27,7 @@ function BookInfo({ books, addToCart, cart }) {
             <div className="book__selected--top">
               <div className="book__selected">
                 <figure className="book__selected--figure">
-                  <img src={book.url} alt="" className="book__selected--img" />
+                  <img src={book.url} alt={book.title} className="book__selected--img" />
                 </figure>
                 <div className="book__selected--description">
                   <h2 className="book__selected--title">{book.title}</h2>
